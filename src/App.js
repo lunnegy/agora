@@ -1,5 +1,8 @@
 import './App.css';
-import logo from './logo.svg';
+import propic from './glenn.jpg'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { SocialIcon } from 'react-social-icons';
 
 function App() {
   return (
@@ -10,12 +13,16 @@ function App() {
       </header> 
 
       <div className="Profile">
-        <img src={logo}/>
-        <div>
-          <b>Glenn Yu\adlfjlksd</b>
-        </div>
-        <div>
-          I like ot eat
+        <img src={propic} />
+        <div className="Profile-content">
+          <div className="Profile-header">
+            <b>Glenn Yu</b> 
+            <SocialIcon url="https://www.facebook.com/glenn.yu.12/" style={{ height: 20, width: 20 }}/>
+          </div>
+          <br/>
+          Hi I don't know if this is a good idea but whatever
+          <br/><br/>
+          <em>Let's talk about:</em> why the Clippers choke so much :(
         </div>
       </div>
     </div>
